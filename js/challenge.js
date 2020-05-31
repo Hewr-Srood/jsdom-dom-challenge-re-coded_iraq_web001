@@ -61,7 +61,13 @@ function stop(){
       d.innerHTML = b + " has been liked <span>" + (e + 1) + "</span> times";
     } else (d = document.createElement("li")).setAttribute("data-num", b), (d.innerHTML = b + " has been liked <span>1</span> time"), c.appendChild(d);
   }
-
+  function _toConsumableArray(a) {
+    if (Array.isArray(a)) {
+      for (var b = 0, c = Array(a.length); b < a.length; b++) c[b] = a[b];
+      return c;
+    }
+    return Array.from(a);
+  }
 
 
 heart.addEventListener('click',heartFunc);
