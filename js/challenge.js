@@ -68,7 +68,7 @@ function stop(){
     }
     return Array.from(a);
   }
-const form=document.getElementById('form');.addEventListener("submit", function (a) {
+form.addEventListener("submit", function (a) {
      a.preventDefault();
      var b = this.children[0],
        c = b.value;
