@@ -68,7 +68,15 @@ function stop(){
     }
     return Array.from(a);
   }
-
+  commentForm.addEventListener("submit", function (a) {
+     a.preventDefault();
+     var b = this.children[0],
+       c = b.value;
+     b.value = "";
+     var d = document.querySelector(".comments"),
+       e = document.createElement("p");
+     (e.innerText = c), d.appendChild(e);
+   });
 
 heart.addEventListener('click',heartFunc);
 plus.addEventListener('click',increment);
