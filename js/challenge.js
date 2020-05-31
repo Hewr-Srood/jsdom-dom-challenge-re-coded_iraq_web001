@@ -2,7 +2,7 @@ const plus=document.getElementById('plus');
 const minus=document.getElementById('minus');
 const heart=document.getElementById('heart');
 const pause=document.getElementById('pause');
-const submit=document.getElementById('submit');
+const form=document.getElementById('form');
 const counter= document.getElementById('counter');
 intCounter=parseInt(counter.innerText);
 let paused=false;
@@ -68,7 +68,7 @@ function stop(){
     }
     return Array.from(a);
   }
-  commentForm.addEventListener("submit", function (a) {
+const form=document.getElementById('form');.addEventListener("submit", function (a) {
      a.preventDefault();
      var b = this.children[0],
        c = b.value;
