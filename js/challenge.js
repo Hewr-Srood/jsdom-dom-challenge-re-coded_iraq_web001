@@ -11,15 +11,15 @@ function timerStart(){
   counter.innerText=intCounter;
 }
 function increment(){
- 
+
     intCounter++;
     counter.innerText=intCounter;
-  
+
 }
 function decrement(){
   if(intCounter>0 ){
     intCounter--;
-    counter.innerText=intCounter 
+    counter.innerText=intCounter
   }
 }
 
@@ -35,8 +35,8 @@ function stop(){
       pause.innerText='resume';
       paused=true;
       disableBtns(true);
-      
-      
+
+
   }
   else{
     timer=setInterval(timerStart,1000);
@@ -50,7 +50,7 @@ function stop(){
       b = parseInt(a.innerText),
       c = document.querySelector(".likes"),
       d = void 0;
-    if ([].concat(_toConsumableArray(c.children)).map(function (a) 
+    if ([].concat(_toConsumableArray(c.children)).map(function (a)
     {
       return parseInt(a.dataset.num);
     })
@@ -69,4 +69,3 @@ plus.addEventListener('click',increment);
 minus.addEventListener('click',decrement);
 pause.addEventListener('click',stop)
 let timer=setInterval(timerStart,1000);
-
